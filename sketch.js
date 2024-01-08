@@ -70,38 +70,38 @@ function draw() {
       pinkBalloon();
     }
   }
+
+if(arrowGroup.isTouching(redB)){
+redB.destroyEach();
+arrowGroup.destroyEach();
+  score = score+1;
+}
+
+
+
+
+if(arrowGroup.isTouching(greenB)) {
+greenB.destroyEach();
+arrowGroup.destroyEach();
+score = score+3
+}
+
+
+
+if(arrowGroup.isTouching(blueB)) {
+blueB.destroyEach();
+arrowGroup.destroyEach();
+score = score+2;
+}
+
+
+
+if(arrowGroup.isTouching(pinkB)) {
+pinkB.destrouEach();
+arrowGroup.destroyEach();
+score = score+1
+}
   
-  if (arrowGroup.isTouching(redB)) {
-  redB.destroyEach();
-  arrowGroup.destroyEach();
-    score=score+1;
-}
-
-
-
-
- if (arrowGroup.isTouching(greenB)) {
-  greenB.destroyEach();
-  arrowGroup.destroyEach();
-  score=score+3;
-}
-
-
-
- if (arrowGroup.isTouching(blueB)) {
-  blueB.destroyEach();
-  arrowGroup.destroyEach();
-  score=score+2;
-}
-
-
-
-if (arrowGroup.isTouching(pinkB)) {
-  pinkB.destroyEach();
-  arrowGroup.destroyEach();
-  score=score+1;
-}
-
   
   drawSprites();
   text("Score: "+ score, 300,50);
