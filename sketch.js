@@ -97,7 +97,7 @@ score = score+2;
 
 
 if(arrowGroup.isTouching(pinkB)) {
-pinkB.destrouEach();
+pinkB.destroyEach();
 arrowGroup.destroyEach();
 score = score+1
 }
